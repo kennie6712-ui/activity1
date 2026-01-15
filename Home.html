@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tranquil Isle Resort</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="my.css" />
+</head>
+<body>
+
+  <div id="scrollProgress" aria-hidden="true"></div>
+
+  <button id="backToTop" type="button" aria-label="Back to top">
+  <span class="arrow-up">↑</span>
+  </button>
+
+  <header id="Home">
+    <div class="header-top">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Tranquil Isle Resort Logo" class="resort-logo" />
+        <h1 class="title">Tranquil Isle Resort</h1>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Rooms">Rooms</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-hero">
+      <h2 class="motto">Where Comfort Meets <br> Paradise. </h2> 
+
+    </div>
+
+    <div class="header-separator" aria-hidden="true"></div>
+  </header>
+
+  <section class="info-bar" aria-label="Resort information">
+    <div class="info-bar-content">
+      <div class="datetime-display">
+        <div class="time-display" id="liveTime"></div>
+        <div class="date-display" id="liveDate"></div>
+      </div>
+
+      <div>
+        <a class="book-now-btn" href="#Contact">
+          <span class="btn-text">Book Now</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section reveal" id="About">
+    <div class="about-carousel" aria-hidden="true">
+      <div class="about-slide active" style="background-image: url('images/background1.jpg');"></div>
+      <div class="about-slide" style="background-image: url('images/background2.jpg');"></div>
+      <div class="about-slide" style="background-image: url('images/background3.jpg');"></div>
+    </div>
+
+    <div class="about-trigger-container">
+      <button
+        id="aboutTrigger"
+        class="about-trigger-pro"
+        type="button"
+        aria-expanded="false"
+        aria-controls="aboutContent"
+      >
+        <div class="trigger-content">
+          <div class="trigger-left">
+            <div class="trigger-icon-pro" aria-hidden="true"> </div>
+
+            <h3 class="trigger-title-pro"> 🌴 About Tranquil Isle</h3>
+          </div>
+
+          <div class="trigger-arrow" aria-hidden="true">
+        
+            <span class="arrow-down">↓</span>
+            <span class="arrow-up">↑</span>
+          </div>
+        </div>
+    </button>
+    </div>
+
+    <div id="aboutContent" class="about-content-wrapper">
+      <div class="about-container">
+        <div class="about-header">
+          <p class="section-intro">
+            Tranquil Isle Resort is a quiet beachfront stay built for unhurried days—clean rooms, thoughtful service,
+            and space to fully switch off.
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-accordion">
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <span class="accordion-icon" aria-hidden="true">🌊</span>
+              <h3>Beachfront setting</h3>
+              <span class="toggle-indicator" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Start the day with sea air and open views, with the shoreline just steps from your room.</p>
+            </div>
+          </div>
+
+          <div class="feature-accordion">
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <span class="accordion-icon" aria-hidden="true">🛏️</span>
+              <h3>Comfort, kept simple</h3>
+              <span class="toggle-indicator" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Well-kept interiors, quality beds, and practical amenities—designed for rest, not for show.</p>
+            </div>
+          </div>
+
+          <div class="feature-accordion">
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <span class="accordion-icon" aria-hidden="true">🤝</span>
+              <h3>Service with privacy</h3>
+              <span class="toggle-indicator" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Attentive support when you need it, and a calm, respectful atmosphere when you don’t.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cta">
+          <a class="cta-link" href="#Amenities">Amenities</a>
+          <a class="cta-link" href="#Rooms">Explore Rooms</a>
+          <a class="cta-link" href="#Contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-separator-bottom" aria-hidden="true"></div>
+  </section>
+
+  <section class="room-section reveal" id="Rooms">
+    <div class="room-container">
+      <div class="room-header">
+        <p class="room-subtitle">ROOMS &amp; SUITES</p>
+        <h2 class="room-title">Experience Exceptional Island Hospitality at Tranquil Isle Resort</h2>
+      </div>
+
+      <div class="room-grid">
+        <div class="room-card">
+          <div class="room-image-section">
+            <img src="images/Standard rm1.jpg" alt="Standard Room" loading="lazy" />
+            <div class="price-tag">$80 / NIGHT</div>
+          </div>
+          <div class="room-info-panel">
+            <div>
+              <p class="room-number">01</p>
+              <h3 class="room-name">Standard Room</h3>
+              <div class="star-rating" aria-label="5-star rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="room-description">
+                Cozy comfort with ocean views. Perfect for solo travelers or couples seeking a relaxing retreat with all essentials.
+              </p>
+              <div class="room-specs">
+                <span class="spec-item">🛏️ King Bed</span>
+                <span class="spec-item">📐 320 sqft</span>
+              </div>
+            </div>
+            <a href="#room1" class="view-details-btn">VIEW DETAILS</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-image-section">
+            <img src="images/superior rm1.jpg" alt="Superior Suite" loading="lazy" />
+            <div class="price-tag">$120/ NIGHT</div>
+          </div>
+          <div class="room-info-panel">
+            <div>
+              <p class="room-number">02</p>
+              <h3 class="room-name">Superior Suite</h3>
+              <div class="star-rating" aria-label="5-star rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="room-description">
+                Spacious elegance with separate lounge. Ideal for extended stays with premium amenities and beachfront access.
+              </p>
+              <div class="room-specs">
+                <span class="spec-item">🛏️ King Bed</span>
+                <span class="spec-item">📐 480 sqft</span>
+              </div>
+            </div>
+            <a href="#room2" class="view-details-btn">VIEW DETAILS</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-image-section">
+            <img src="images/Deluxe rm1.jpg" alt="Deluxe Room" loading="lazy" />
+            <div class="price-tag">$160 / NIGHT</div>
+          </div>
+          <div class="room-info-panel">
+            <div>
+              <p class="room-number">03</p>
+              <h3 class="room-name">Deluxe Room</h3>
+              <div class="star-rating" aria-label="5-star rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="room-description">
+                Refined luxury meets island charm. Panoramic ocean views, private balcony, and curated interior design.
+              </p>
+              <div class="room-specs">
+                <span class="spec-item">🛏️ King Bed</span>
+                <span class="spec-item">📐 550 sqft</span>
+              </div>
+            </div>
+            <a href="#room3" class="view-details-btn">VIEW DETAILS</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-image-section">
+            <img src="images/Family Suite.jpg" alt="Family Suite" loading="lazy" />
+            <div class="price-tag">$240 / NIGHT</div>
+          </div>
+          <div class="room-info-panel">
+            <div>
+              <p class="room-number">04</p>
+              <h3 class="room-name">Family Suite</h3>
+              <div class="star-rating" aria-label="5-star rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="room-description">
+                Spacious family haven with two bedrooms. Perfect for groups, featuring kitchenette and ocean-view terrace.
+              </p>
+              <div class="room-specs">
+                <span class="spec-item">🛏️ 2 King Beds</span>
+                <span class="spec-item">📐 880 sqft</span>
+              </div>
+            </div>
+            <a href="#room4" class="view-details-btn">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-all-container">
+        <a href="#Gallery" class="explore-all-btn">EXPLORE ALL ROOMS</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="room1" class="lightbox">
+    <a href="#Rooms" class="close" aria-label="Close">×</a>
+    <img src="images/Standard rm2.jpg" alt="Standard Room - Full View" />
+  </div>
+
+  <div id="room2" class="lightbox">
+    <a href="#Rooms" class="close" aria-label="Close">×</a>
+    <img src="images/superior rm2.jpg" alt="Superior Suite - Full View" />
+  </div>
+
+  <div id="room3" class="lightbox">
+    <a href="#Rooms" class="close" aria-label="Close">×</a>
+    <img src="images/Deluxe rm1.jpg" alt="Deluxe Room - Full View" />
+  </div>
+
+  <div id="room4" class="lightbox">
+    <a href="#Rooms" class="close" aria-label="Close">×</a>
+    <img src="images/Family Suite.jpg" alt="Family Suite - Full View" />
+  </div>
+
+  <section class="book-strip" aria-label="Booking ticker">
+    <div class="book-strip-track">
+      <span class="book-strip-text">BOOK NOW</span>
+      <span class="book-strip-text">BOOK NOW</span>
+      <span class="book-strip-text">BOOK NOW</span>
+      <span class="book-strip-text">BOOK NOW</span>
+      <span class="book-strip-text">BOOK NOW</span>
+      <span class="book-strip-text">BOOK NOW</span>
+    </div>
+  </section>
+
+  <div class="footer-gap"></div>
+
+  <footer class="footer" id="Contact">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3 class="footer-logo-text">Tranquil Isle Resort</h3>
+        <p class="footer-tagline">Find your peace by the shore.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Rooms">Rooms</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p class="footer-contact-item">
+          Email: <a href="mailto:info@tranquilisleresort.com">info@tranquilisleresort.com</a>
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Newsletter</h4>
+        <div class="footer-newsletter">
+          <p class="newsletter-title">Get resort updates</p>
+          <form id="newsletterForm">
+            <input id="newsletterEmail" type="email" placeholder="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <small id="newsletterMsg" aria-live="polite"></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p><span id="year"></span> Tranquil Isle Resort. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="my.js"></script>
+</body>
+</html>
